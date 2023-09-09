@@ -1,0 +1,46 @@
+OOA -> OOD -> OOP
+
+概念:
+OOA是确定需求，按照面向对象的思想来分析业务，对需求中描述的问题，进行模块化的处理，，确定问题中的对象
+OOD是对OOA分析的结果作进一步的规范化整理，以便能够被OOP直接接受
+OOP把组件的实现和接口分开，并且让组件具有多态性，面向接口编程
+
+思路:
+1. Clarify requirement 哪些是必须的，哪些可以不用考虑
+2. Define classes (core objects) 整个事件中一共会出现哪些类
+3. Define field (properties) 每个类有哪些field
+4. Define method, how data flow works 类与类之间是如何交互的
+5. Implementing 核心关键method
+6. Optimize with design pattern 锦上添花，可以不写 
+
+核心:
+1. class, field and method
+2. 如何扩展也就是inheritance将来有新的object好不好加
+
+封装encapsulation: Each class is just like a capsult that contains everything it needs and nothing more
+继承inheritance: Passing down traits or characteristics from a parent to their child
+抽象abstraction: Hiding relevant data from an objects for easy maintenance and reduced complexity
+多态polymorphism: Multiple shapes or forms
+
+重写overriding:
+Must have at least one method by the same name in both parent and child classes
+Must have the same number of parameters
+Must have the same parameter types
+Run-time polymorphism
+
+重载overloading:
+Must have at least two methods by the same name in the class
+Must have a different number of parameters
+If the number of parameters is the same, then it must have different types of parameters
+Compile-time polymorphism
+
+接口interface:
+Interface difine what a class should do but not how to do it
+Creating an interface is very similar to creating a class
+An interface's sole purpose is to be implemented by one or more classes
+You cannot create an instance form  an interface
+
+A final field: 防止变量的值被修改
+A final method: 防止方法被重写
+A final class: 防止方法被继承
+
